@@ -3,14 +3,14 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"goDemo/config"
-	"goDemo/middleware"
+	"goDemo/middleware/logger"
 	"goDemo/route"
 )
 
 func main() {
 	r := gin.Default()
 	//r := gin.New()
-	r.Use(middleware.LoggerToFile())
+	r.Use(logger.LoggerToFile())
 	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"message": "pong5",

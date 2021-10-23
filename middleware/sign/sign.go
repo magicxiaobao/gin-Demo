@@ -1,4 +1,4 @@
-package middleware
+package sign
 
 import (
 	"github.com/gin-gonic/gin"

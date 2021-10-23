@@ -6,7 +6,7 @@ import (
 	"goDemo/common"
 	"goDemo/controller/v1"
 	v2 "goDemo/controller/v2"
-	"goDemo/middleware"
+	"goDemo/middleware/sign"
 	"goDemo/validator"
 	"net/url"
 	"strconv"
@@ -20,7 +20,7 @@ func InitRouter(engine *gin.Engine) {
 		group1.Any("/member/add", v1.AddMember)
 	}
 	group2 := engine.Group("v2")
-	group2.Use(middleware.Sign())
+	group2.Use(sign.Sign())
 	{
 		group2.Any("/member/add", v2.AddMember)
 	}
