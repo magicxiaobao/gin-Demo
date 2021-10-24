@@ -2,7 +2,7 @@ package sign
 
 import (
 	"github.com/gin-gonic/gin"
-	"goDemo/common"
+	"goDemo/common/function"
 	"goDemo/entity"
 	"net/http"
 )
@@ -12,18 +12,15 @@ func Sign() gin.HandlerFunc {
 	return func(context *gin.Context) {
 
 		res := entity.Result{}
-		sign, err := common.VerifySign(context)
+		sign, err := function.VerifySign(context)
 		if sign != nil {
-			res.SetCode(entity.FAIL)
-			res.SetMessage("Debug Sign")
-			res.SetData(sign)
+			res = entity.ErrSignParam
 			context.JSON(http.StatusUnauthorized, res)
 			context.Abort()
 			return
 		}
 		if err != nil {
-			res.SetCode(entity.FAIL)
-			res.SetMessage(err.Error())
+			res = entity.ErrSignParam
 			context.JSON(http.StatusUnauthorized, res)
 			context.Abort()
 			return

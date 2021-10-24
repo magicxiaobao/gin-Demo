@@ -3,7 +3,7 @@ package route
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
-	"goDemo/common"
+	"goDemo/common/function"
 	"goDemo/controller/v1"
 	v2 "goDemo/controller/v2"
 	"goDemo/middleware/sign"
@@ -30,14 +30,14 @@ func InitRouter(engine *gin.Engine) {
 
 func SignDemo(ctx *gin.Context) {
 
-	ts := strconv.FormatInt(common.GetCurrentTimeStamp(), 10)
+	ts := strconv.FormatInt(function.GetCurrentTimeStamp(), 10)
 	response := map[string]interface{}{}
 	params := url.Values{
 		"name": []string{"guoguo"},
 		"age":  []string{"9"},
 		"ts":   []string{ts},
 	}
-	response["sn"] = common.CreateSign(params)
+	response["sn"] = function.CreateSign(params)
 	response["ts"] = ts
-	common.RetJson("200", "", response, ctx)
+	function.RetJson("200", "", response, ctx)
 }

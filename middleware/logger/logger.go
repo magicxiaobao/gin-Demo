@@ -52,5 +52,6 @@ func LoggerToFile() gin.HandlerFunc {
 			"req_method":   method,
 			"req_uri":      reqUri,
 		}).Info()
+		ctx.Next()
 	}
 }
