@@ -1,7 +1,7 @@
 package validator
 
 import (
-	"goDemo/validator/member"
+	"github.com/magicxiaobao/ginDemo/validator/member"
 	"reflect"
 	"sync"
 

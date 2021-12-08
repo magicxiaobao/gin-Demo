@@ -2,8 +2,8 @@ package sign
 
 import (
 	"github.com/gin-gonic/gin"
-	"goDemo/common/function"
-	"goDemo/entity"
+	"github.com/magicxiaobao/ginDemo/common/function"
+	"github.com/magicxiaobao/ginDemo/entity"
 	"net/http"
 )
 

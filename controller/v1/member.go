@@ -2,8 +2,8 @@ package v1
 
 import (
 	"github.com/gin-gonic/gin"
-	"goDemo/common/alarm"
-	"goDemo/entity"
+	"github.com/magicxiaobao/ginDemo/common/alarm"
+	"github.com/magicxiaobao/ginDemo/entity"
 	"net/http"
 )
 

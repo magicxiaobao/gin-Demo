@@ -3,9 +3,9 @@ package alarm
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/magicxiaobao/ginDemo/common/function"
+	"github.com/magicxiaobao/ginDemo/config"
 	"github.com/sirupsen/logrus"
-	"goDemo/common/function"
-	"goDemo/config"
 	"os"
 	"path"
 	"path/filepath"

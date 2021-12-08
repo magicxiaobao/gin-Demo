@@ -3,8 +3,8 @@ package logger
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"github.com/magicxiaobao/ginDemo/config"
 	"github.com/sirupsen/logrus"
-	"goDemo/config"
 	"os"
 	"path"
 	"time"

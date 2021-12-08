@@ -3,7 +3,7 @@ package recover
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"goDemo/common/alarm"
+	"github.com/magicxiaobao/ginDemo/common/alarm"
 )
 
 func Recover() gin.HandlerFunc {

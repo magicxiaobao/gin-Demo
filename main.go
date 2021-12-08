@@ -2,10 +2,10 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"goDemo/config"
-	"goDemo/middleware/logger"
-	"goDemo/middleware/recover"
-	"goDemo/route"
+	"github.com/magicxiaobao/ginDemo/config"
+	"github.com/magicxiaobao/ginDemo/middleware/logger"
+	"github.com/magicxiaobao/ginDemo/middleware/recover"
+	"github.com/magicxiaobao/ginDemo/route"
 )
 
 func main() {

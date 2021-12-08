@@ -3,11 +3,11 @@ package route
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
-	"goDemo/common/function"
-	"goDemo/controller/v1"
-	v2 "goDemo/controller/v2"
-	"goDemo/middleware/sign"
-	"goDemo/validator"
+	"github.com/magicxiaobao/ginDemo/common/function"
+	"github.com/magicxiaobao/ginDemo/controller/v1"
+	v2 "github.com/magicxiaobao/ginDemo/controller/v2"
+	"github.com/magicxiaobao/ginDemo/middleware/sign"
+	"github.com/magicxiaobao/ginDemo/validator"
 	"net/url"
 	"strconv"
 )

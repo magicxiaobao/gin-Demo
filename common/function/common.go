@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"goDemo/config"
+	"github.com/magicxiaobao/ginDemo/config"
 	"net/http"
 	"net/url"
 	"sort"
