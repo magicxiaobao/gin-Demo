@@ -1,4 +1,4 @@
-module github/magicxiaobao/ginDemo
+module github.com/magicxiaobao/ginDemo
 
 go 1.17
 
